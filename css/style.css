@@ -33,7 +33,7 @@
 
 .sign-up {
     flex: 1 1 65%;
-    background-color: rgb(243, 242, 242);
+    background-color: rgb(250, 250, 250);
 }
 
 .transparent-background {
@@ -77,7 +77,7 @@
 .heading {
     padding: 100px 80px 20px 40px;
 }
-.heading > p {
+.heading > p, form > p {
     font-family: sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
@@ -99,7 +99,7 @@ label, input {
 }
 
 form {
-    padding-left: 40px;
+    padding: 20px 0px 30px 40px;
     background-color: white;
     box-shadow: 0px 4px 2px rgba(139, 139, 139, 0.2);
 }
@@ -110,4 +110,51 @@ form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+
+    margin: 30px 0 0 40px;
+    gap: 15px;
+}
+
+.bottom > button {
+    width: 200px;
+    padding: 10px 5px;
+    background-color: #596D48;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.bottom > p > a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+label {
+    font-family: sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.6px;
+}
+
+input {
+    outline: none;
+    border: 1px solid #E5E7EB;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+input:focus {
+    border: 1px solid #2e4f91;
+    box-shadow: 0px 1px 2px #2e4f91;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid #d1452c;
+    box-shadow: 0px 1px 2px #d1452c;
 }
